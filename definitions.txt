@@ -1,0 +1,23 @@
+## intersection definition
+# described as a list of 'lane' objects
+# lane IDs counter clockwise as shown: (also a list of side lengths: 3,3,3,3 in this case)
+#   |0|1|2|
+#  -       -
+# 11       3
+#  -       -
+# 10       4
+#  -       -
+#  9       5
+#  -       -
+#   |8|7|6|
+#  
+# each lane object is either 
+#  -input:
+#   where cars come in
+#   has list of legal output turns (aka the output lane IDs)
+#   probability that a new car will come (number 0-100)
+#   ?? traffic light type (normal, arrow, combined)
+#   
+#  -output:
+#   simply a lane into which a car can turn
+#   efficiency counter in the object
